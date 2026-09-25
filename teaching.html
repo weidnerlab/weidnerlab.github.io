@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  ================================================================
+  Teaching & Training — teaching.html
+  ================================================================
+  HOW TO ADD A NEW COURSE:
+  1. Find the correct university section below
+  2. Copy a <div class="course-card"> block
+  3. Fill in: course code, name, semesters taught, description
+  4. To add a syllabus: uncomment the syllabus button line and
+     save the PDF to: assets/syllabi/COURSECODE-SEMESTER.pdf
+
+  HOW TO ADD A CONTINUING EDUCATION / TRAINING SESSION:
+  Find the "Professional Training & Workshops" section and
+  copy a training card block.
+
+  NOTES:
+  ** = Designed and developed course
+  *** = Redesigned course
+  TA = Teaching Assistantship
+  ================================================================
+  -->
+  <title>Teaching & Training | FEWL Lab @ ASU</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span>FEWL</span> Lab @ ASU</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <!-- People dropdown: About, Team, Alumni -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            People
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aboutme.html">About Dr. Weidner</a></li>
+            <li><a class="dropdown-item" href="team.html">Research Team</a></li>
+            <li><a class="dropdown-item" href="alumni.html">Alumni</a></li>
+          </ul>
+        </li>
+
+        <!-- Research dropdown: Research areas, Publications -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Research
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="research.html">Research Areas</a></li>
+            <li><a class="dropdown-item" href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link active" href="teaching.html">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2" style="background:none; padding:0;">
+          <li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a></li>
+          <li class="breadcrumb-item active" style="color:var(--gold-main);">Teaching</li>
+        </ol>
+      </nav>
+      <h1>Teaching</h1>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TAB NAVIGATION
+       ============================================================ -->
+
+  <div style="background:var(--white); border-bottom:1px solid var(--border-light); padding:14px 0; position:sticky; top:66px; z-index:100;">
+    <div class="container text-center">
+  </div>
+
+  <section>
+    <div class="container">
+
+      <!-- ── ASU COURSES ── -->
+      <div id="asu" class="research-section active">
+        <h2 class="section-title">Arizona State University</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">School of Interdisciplinary Forensics (SIF), New College of Interdisciplinary Arts and Sciences</p>
+
+        <!--
+        HOW TO ADD A COURSE:
+        Copy the block below, update course code, name, semesters, and description.
+        For a syllabus button, uncomment the <a class="course-syllabus-btn"> line.
+        Save syllabus PDFs to: assets/syllabi/FOR414-Fall2022.pdf
+        -->
+<div class="pub-year-header" id="books">Current Courses</div>
+        <!-- Course: FOR 414 -->
+        <div class="course-card">
+          <div class="course-code">FOR 414 <span style="color:var(--gold-dark); margin-left:6px; font-size:0.72rem;">★★ Developed course</span></div>
+          <div class="course-name">Fundamentals of Forensic Entomology</div>
+          <div class="course-meta">Lecture &amp; Lab &mdash; Fall 2019; Fall 2021 &amp; 2022 (lecture only)</div>
+          <p style="font-size:0.88rem; color:var(--text-mid); margin-top:8px; margin-bottom:6px; line-height:1.7;">
+            <!--
+            TO EDIT: Add a brief course description here.
+            Example: Introduces students to the use of arthropods in forensic investigations...
+            -->
+            Introduction to the use of arthropods in forensic investigations, including postmortem interval estimation, specimen collection, and evidence documentation. Lab component includes insect identification, rearing, and case study analysis.
+          </p>
+          <!--
+          SYLLABUS BUTTON — uncomment and update path when PDF is available:
+          <a href="assets/syllabi/FOR414-Fall2022.pdf" class="course-syllabus-btn" target="_blank">
+            <i class="bi bi-file-earmark-pdf"></i> Syllabus
+          </a>
+          -->
+        </div>
+
+        <!-- Course: FOR 200 -->
+        <div class="course-card">
+          <div class="course-code">FOR 200<span style="color:var(--gold-dark); margin-left:6px; font-size:0.72rem;">★★ Developed course</span></div>
+          <div class="course-name">Forensic Science Seminar</div>
+          <div class="course-meta">Spring 2024, 2025, 2027</div>
+          <p style="font-size:0.88rem; color:var(--text-mid); margin-top:8px; margin-bottom:6px; line-height:1.7;">
+            <!-- TO EDIT: Add course description -->
+            Seminar course which introduces the student to the forensic science program at ASU along with covering current topics and emerging research in forensic science.
+          </p>
+        </div>
+
+        <!-- Course: FOR 496 -->
+        <div class="course-card">
+          <div class="course-code">FOR 496<span style="color:var(--gold-dark); margin-left:6px; font-size:0.72rem;">★★ Developed course</span></div>
+          <div class="course-name">Forensic Science Service Learning</div>
+          <div class="course-meta">Spring 2022–2025, 2027</div>
+          <p style="font-size:0.88rem; color:var(--text-mid); margin-top:8px; margin-bottom:6px; line-height:1.7;">
+            <!-- TO EDIT: Add course description -->
+            Service-learning course in which students apply forensic science knowledge in a way that assists the community. Iterations of the course have included
+           investigating real cold cases in partnership with law enforcement and advocacy organizations, and the production of forensic science educational content for high schoolers.
+          </p>
+        </div>
+
+<div class="pub-year-header" id="books">Past Courses</div>
+        <!-- Course: FOR 410 -->
+        <div class="course-card">
+          <div class="course-code">FOR 410<span style="color:var(--gold-dark); margin-left:6px; font-size:0.72rem;">★ Redesigned course</span></div>
+          <div class="course-name">Testimony and Ethics in Forensic Science</div>
+          <div class="course-meta">Spring 2021–2023; Fall 2021 &amp; 2022</div>
+          <p style="font-size:0.88rem; color:var(--text-mid); margin-top:8px; margin-bottom:6px; line-height:1.7;">
+            <!-- TO EDIT: Add course description -->
+            Examination of ethical standards, professional responsibilities, and expert witness testimony in forensic science. Includes mock trial exercises and case study analysis.
+          </p>
+        </div>
+
+        <!-- Course: FOR 485 -->
+        <div class="course-card">
+          <div class="course-code">FOR 485</div>
+          <div class="course-name">Forensic Science Capstone</div>
+          <div class="course-meta">Spring 2019</div>
+          <p style="font-size:0.88rem; color:var(--text-mid); margin-top:8px; margin-bottom:6px; line-height:1.7;">
+            <!-- TO EDIT: Add course description -->
+            Senior capstone course integrating forensic science concepts through independent research projects.
+          </p>
+        </div>
+
+        <!-- Other ASU labs -->
+        <div class="course-card">
+          <div class="course-code">FOR 286 / 105 / 106</div>
+          <div class="course-name">Forensic Science Laboratory Courses</div>
+          <div class="course-meta">FOR 286: Fall 2020 &mdash; FOR 105: Fall 2020 &mdash; FOR 106: Spring 2020</div>
+          <p style="font-size:0.88rem; color:var(--text-mid); margin-top:8px; margin-bottom:6px; line-height:1.7;">
+            Laboratory which covers foundational concepts of forensic science.
+          </p>
+        </div>
+
+        <!-- ADD NEW ASU COURSES HERE — copy a course-card block above -->
+
+    
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-logo mb-2"><span>FEWL</span> Lab @ ASU</div>
+          <p style="font-size:0.88rem; opacity:0.75; line-height:1.7;">Forensic Entomology and Wildlife Lab<br>School of Interdisciplinary Forensics<br>Arizona State University</p>
+          <div class="social-icons mt-2">
+            <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" title="Google Scholar" target="_blank" rel="noopener"><i class="bi bi-mortarboard-fill"></i></a>
+            <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" title="ResearchGate" target="_blank" rel="noopener"><i class="bi bi-journals"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 footer-links">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">External Links</div>
+          <a href="https://search.asu.edu/profile/3334658" target="_blank" rel="noopener">ASU Faculty Profile</a>
+          <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" target="_blank" rel="noopener">ResearchGate</a>
+        </div>
+        <div class="col-lg-3">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">Contact</div>
+          <div style="font-size:0.88rem; opacity:0.8; line-height:2;">
+            <i class="bi bi-envelope-fill me-2"></i><a href="mailto:lauren.weidner@asu.edu" style="color:rgba(255,255,255,0.8);">lauren.weidner@asu.edu</a><br>
+            <i class="bi bi-telephone-fill me-2"></i> 602.543.6068<br>
+            <i class="bi bi-geo-alt-fill me-2"></i> 4701 W. Thunderbird Rd, Glendale, AZ 85382
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        &copy; <script>document.write(new Date().getFullYear())</script> FEWL Lab &mdash; Arizona State University. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Tab switcher — same pattern as research.html
+    function showTab(id, btn) {
+      document.querySelectorAll('.research-section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.research-pill').forEach(b => b.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      if (btn) btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

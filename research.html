@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  ================================================================
+  Research Interests — research.html
+  ================================================================
+  HOW TO EDIT RESEARCH SECTIONS:
+  Each research area is a <div id="..." class="research-section">.
+  Click the pills at the top to show/hide each section.
+
+  TO ADD A NEW RESEARCH AREA:
+  1. Add a new pill button in the pill bar below
+  2. Add a new <div class="research-section"> block with matching id
+  3. Add a new overview card in the #overview section
+
+  TO ADD A FUNDED PROJECT:
+  Find the "Active Projects" section and copy a project card block.
+  ================================================================
+  -->
+  <title>Research | FEWL Lab @ ASU</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span>FEWL</span> Lab @ ASU</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <!-- People dropdown: About, Team, Alumni -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            People
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aboutme.html">About Dr. Weidner</a></li>
+            <li><a class="dropdown-item" href="team.html">Research Team</a></li>
+            <li><a class="dropdown-item" href="team.html#alumni">Alumni</a></li>
+          </ul>
+        </li>
+
+        <!-- Research dropdown: Research areas, Publications -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+            Research
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="research.html">Research Areas</a></li>
+            <li><a class="dropdown-item" href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2" style="background:none; padding:0;">
+          <li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a></li>
+          <li class="breadcrumb-item active" style="color:var(--gold-main);">Research</li>
+        </ol>
+      </nav>
+      <h1>Research Interests</h1>
+      <p>Insects as tools for justice, conservation, and understanding the natural world</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PILL NAVIGATION BAR
+       TO EDIT: Update button labels and IDs to match your sections.
+       ============================================================ -->
+  <div style="background:var(--white); border-bottom:1px solid var(--border-light); padding:16px 0; position:sticky; top:66px; z-index:100;">
+    <div class="container text-center">
+      <button class="research-pill active" onclick="showSection('overview', this)">
+        <i class="bi bi-grid-3x3-gap"></i> Overview
+      </button>
+      <button class="research-pill" onclick="showSection('forensic', this)" id="btn-forensic">
+        <i class="bi bi-bug-fill"></i> Blow Fly Development
+      </button>
+      <button class="research-pill" onclick="showSection('wildlife', this)" id="btn-wildlife">
+        <i class="bi bi-tree-fill"></i> Desert Decomposition
+      </button>
+       <button class="research-pill" onclick="showSection('education', this)" id="btn-education">
+        <i class="bi bi-book-half"></i> Larval Morphology
+      </button>
+      <button class="research-pill" onclick="showSection('arid', this)" id="btn-arid">
+        <i class="bi bi-thermometer-high"></i> Wildlife &amp; Conservation
+      </button>
+        <button class="research-pill" onclick="showSection('education', this)" id="btn-orpi">
+        <i class="bi bi-book-half"></i> Insect Biodiversity at ORPI
+      </button>
+      <!-- ADD NEW PILL: copy line above and change id and label -->
+    </div>
+  </div>
+
+  <!-- ============================================================
+       RESEARCH SECTIONS
+       ============================================================ -->
+  <section>
+    <div class="container">
+
+      <!-- ── OVERVIEW (shown by default) ── -->
+      <div id="overview" class="research-section active">
+        <div class="text-center mb-5">
+          <h2 class="section-title">What We Study</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="section-subtitle">Click any area below to learn more</p>
+        </div>
+        <div class="row g-4">
+
+          <!-- Overview card — forensic -->
+          <div class="col-md-6 col-lg-3">
+            <div class="fewl-card" style="cursor:pointer;" onclick="showSection('forensic', document.getElementById('btn-forensic'))">
+              <div class="card-accent"></div>
+              <div class="card-body">
+                <div class="card-icon"><i class="bi bi-bug-fill"></i></div>
+                <h5 style="font-family:'Lora',serif; font-weight:700; font-size:1rem;">Blow Fly Development</h5>
+                <p style="font-size:0.88rem; color:var(--text-mid); line-height:1.7;"> Larval development, TOC estimation 
+          </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Overview card — wildlife -->
+          <div class="col-md-6 col-lg-3">
+            <div class="fewl-card" style="cursor:pointer;" onclick="showSection('wildlife', document.getElementById('btn-wildlife'))">
+              <div class="card-accent"></div>
+              <div class="card-body">
+                <div class="card-icon"><i class="bi bi-tree-fill"></i></div>
+                <h5 style="font-family:'Lora',serif; font-weight:700; font-size:1rem;">Desert Decomposition</h5>
+                <p style="font-size:0.88rem; color:var(--text-mid); line-height:1.7;">Insect arrival and colonization, thermal limits</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Overview card — arid -->
+           <div class="col-md-6 col-lg-3">
+            <div class="fewl-card" style="cursor:pointer;" onclick="showSection('education', document.getElementById('btn-education'))">
+              <div class="card-accent"></div>
+              <div class="card-body">
+                <div class="card-icon"><i class="bi bi-book-half"></i></div>
+                 <h5 style="font-family:'Lora',serif; font-weight:700; font-size:1rem;">Larval Morphology</h5>
+                <p style="font-size:0.88rem; color:var(--text-mid); line-height:1.7;">Blow fly larvae, Identification keys</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Overview card — education -->
+         <div class="col-md-6 col-lg-3">
+            <div class="fewl-card" style="cursor:pointer;" onclick="showSection('arid', document.getElementById('btn-arid'))">
+              <div class="card-accent"></div>
+              <div class="card-body">
+                <div class="card-icon"><i class="bi bi-thermometer-high"></i></div>
+               <h5 style="font-family:'Lora',serif; font-weight:700; font-size:1rem;">Wildlife &amp; Conservation</h5>
+                <p style="font-size:0.88rem; color:var(--text-mid); line-height:1.7;">Insects as bioindicators, biodiversity monitoring, trafficking detection.</p>
+              </div>
+            </div>
+          </div>
+
+<div class="col-md-6 col-lg-3">
+            <div class="fewl-card" style="cursor:pointer;" onclick="showSection('wildlife', document.getElementById('btn-wildlife'))"">
+              <div class="card-accent"></div>
+              <div class="card-body">
+                <div class="card-icon"><i class="bi bi-book-half"></i></div>
+                <h5 style="font-family:'Lora',serif; font-weight:700; font-size:1rem;">Biodiversity at ORPI</h5>
+                <p style="font-size:0.88rem; color:var(--text-mid); line-height:1.7;">Insect biodiversity at Organ Pipe Cactus National Monument</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    
+      </div>
+      <!-- END OVERVIEW -->
+
+      <!-- ── FORENSIC ENTOMOLOGY ── -->
+      <div id="forensic" class="research-section">
+        <div class="mb-4">
+          <h2 class="section-title">Blow Fly Development</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5">
+            <p style="font-size:1.02rem; line-height:1.85; color:var(--text-mid);">
+              Forensic entomology uses insects (and other arthropods) to help answer questions pertaining in legal investigations. Understanding insect development is extremely important for the production of timelines in criminal investigations.
+            </p>
+            <p style="font-size:1.02rem; line-height:1.85; color:var(--text-mid);">
+              At FEWL, we investigate how various factors — including temperature, 
+              diet, and geography — affect blow fly development and
+              colonization dynamics, with a particular focus on conditions unique to Arizona and the
+              American Southwest. Additionally this lab is interested in blow fly larval morphology to provide improved accuracy for identification and age of forensically relevant blow flies.
+              
+            </p>
+            <p style="font-size:1.02rem; line-height:1.85; color:var(--text-mid);">
+              <!--
+              TO EDIT: Add more research description here. Describe methods,
+              key findings, ongoing questions, and collaborations.
+              -->
+            </p>
+          </div>
+          <div class="col-lg-7">
+          <div style="background:var(--maroon-pale); border:2px dashed var(--maroon-border); border-radius:10px; padding:50px 20px; text-align:center; color:var(--text-light);">
+            
+              <img src="assets/img/lab/ruf-pup.jpg">
+            </div>
+            <!--
+            RESEARCH PHOTO — add a photo of field/lab work here:
+            <div style="background:var(--maroon-pale); border:2px dashed var(--maroon-border); border-radius:10px; padding:50px 20px; text-align:center; color:var(--text-light);">
+              <i class="bi bi-image" style="font-size:2.5rem; display:block; margin-bottom:10px;"></i>
+              <small><br><code style="font-size:0.75rem;">assets/img/lab/ruf-pup.jpeg</code></small>
+            </div>
+
+
+            <!-- Key topics -->
+            <div style="margin-top:1rem; background:var(--white); border:1px solid var(--border-light); border-radius:10px; padding:1.25rem;">
+              <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--text-light); margin-bottom:10px;">Key Topics</div>
+              <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Calliphoridae</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">TOC Estimation</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Blow Fly Biology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END FORENSIC -->
+
+
+      <!-- ── WILDLIFE FORENSICS ── -->
+      <div id="wildlife" class="research-section">
+        <div class="mb-4">
+          <h2 class="section-title">Desert Decomposition</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5">
+            <p style="font-size:1.02rem; line-height:1.85; color:var(--text-mid);">
+             Arizona's extreme heat presents unique challenges and opportunities for studying
+              insect ecology. Here at FEWL, we investigate how high temperatures affect blow fly
+              arrival, oviposition, and colonization dynamics on decomposing remains.
+              
+              
+            </p>
+            <p style="font-size:1.02rem; line-height:1.85; color:var(--text-mid);">
+               This work has direct forensic implications — standard PMI estimation models were
+              developed in temperate climates and may not apply in Phoenix's intense summer heat.
+              Understanding critical thermal maxima of forensically important species is essential
+              for accurate death investigations in the Southwest.
+               
+            
+          </div>
+          <div class="col-lg-7">
+            <div style="background:var(--maroon-pale); border:2px dashed var(--maroon-border); border-radius:20px; padding:50px 20px; text-align:center; color:var(--text-light);">
+            
+             <img src="assets/img/lab/decomp.jpg">
+            </div>
+            <div style="margin-top:1rem; background:var(--white); border:1px solid var(--border-light); border-radius:10px; padding:1.25rem;">
+              <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--text-light); margin-bottom:10px;">Key Topics</div>
+              <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Sonoran Desert</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Decomposition</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Thermal Limits</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Insect Arrival and Colonization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END WILDLIFE -->
+
+      <!-- ── ARID ENVIRONMENTS ── -->
+      <div id="arid" class="research-section">
+        <div class="mb-4">
+          <h2 class="section-title">Wildlife & Conservation</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-7">
+            <p style="font-size:1.02rem; line-height:1.85; color:var(--text-mid);">
+         FEWL uses insects as ecological tools to monitor wildlife biodiversity by understanding and examining the diet of 
+         carrion flies. This method would allow for greater coverage and more time efficient biomonitoring techniques. This project is 
+         being completed in collaboration with the <a href="https://cehjelmen.github.io/">Hjelmen Lab</a> at Utah Valley University.        
+            </p>
+            <p style="font-size:1.02rem; line-height:1.85; color:var(--text-mid);">
+          
+    
+          </div>
+          <div class="col-lg-5">
+            <div style="background:var(--maroon-pale); border:2px dashed var(--maroon-border); border-radius:10px; padding:50px 20px; text-align:center; color:var(--text-light);">
+             <img src="assets/img/lab/gabby.jpg">
+            </div>
+            <div style="margin-top:1rem; background:var(--white); border:1px solid var(--border-light); border-radius:10px; padding:1.25rem;">
+              <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--text-light); margin-bottom:10px;">Key Topics</div>
+              <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Gut Content Analysis</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Biodiversity Monitoring</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Host DNA</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END ARID -->
+
+      <!-- ── FORENSIC EDUCATION ── -->
+      <div id="education" class="research-section">
+        <div class="mb-4">
+          <h2 class="section-title">Larval Morphology</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-7">
+            <p style="font-size:1.02rem; line-height:1.85; color:var(--text-mid);">
+              FEWL is working on developing the first inclusive pictorial key of forensically relevant blow fly larvae. These larvae play crucial roles in casework,
+              however, the information for identifying these species in the larvae stage is severely limited in North America. This information also includes valuable information about the larvae of the New World Screwworm (NWS).
+            
+            </p>
+          
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div style="background:var(--maroon-pale); border:2px dashed var(--maroon-border); border-radius:10px; padding:50px 20px; text-align:center; color:var(--text-light);">
+            <img src="assets/img/lab/ruf.jpg">
+            </div>
+            <div style="margin-top:1rem; background:var(--white); border:1px solid var(--border-light); border-radius:10px; padding:1.25rem;">
+              <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--text-light); margin-bottom:10px;">Key Topics</div>
+              <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Identification Keys</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Third Instar Larvae</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Blow Flies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END EDUCATION -->
+ <!-- ── ORPI ── -->
+      <div id="orpi" class="research-section">
+        <div class="mb-4">
+          <h2 class="section-title">Biodiversity at Organ Pipe Cactus National Monument</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-7">
+            <p style="font-size:1.02rem; line-height:1.85; color:var(--text-mid);">
+             FEWL examined insect biodiversity at Organ Pipe Cactus National Monument for 18 months with support from the <a href="https://wnpa.org/grants">Western National Parks</a>. 
+             The primary goal of this project was to analyze the insect biodiversity in ORPI to create an updated baseline inventory. Check out
+             some of the amazing insects we found <a href="https://www.inaturalist.org/observations?project_id=124931">here</a>
+            </p>
+          
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div style="background:var(--maroon-pale); border:2px dashed var(--maroon-border); border-radius:10px; padding:50px 20px; text-align:center; color:var(--text-light);">
+            <img src="assets/img/lab/ruf.jpg">
+            </div>
+            <div style="margin-top:1rem; background:var(--white); border:1px solid var(--border-light); border-radius:10px; padding:1.25rem;">
+              <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--text-light); margin-bottom:10px;">Key Topics</div>
+              <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Identification Keys</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Third Instar Larvae</span>
+                <span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.8rem; font-weight:700; padding:4px 12px; border-radius:20px;">Blow Flies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END EDUCATION -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-logo mb-2"><span>FEWL</span> Lab @ ASU</div>
+          <p style="font-size:0.88rem; opacity:0.75; line-height:1.7;">Forensic Entomology and Wildlife Lab<br>School of Interdisciplinary Forensics<br>Arizona State University</p>
+          <div class="social-icons mt-2">
+            <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" title="Google Scholar" target="_blank" rel="noopener"><i class="bi bi-mortarboard-fill"></i></a>
+            <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" title="ResearchGate" target="_blank" rel="noopener"><i class="bi bi-journals"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 footer-links">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">Pages</div>
+          <a href="index.html">Home</a>
+          <a href="aboutme.html">About Dr. Weidner</a>
+          <a href="team.html">Research Team</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="teaching.html">Teaching &amp; Training</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-lg-3 footer-links">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">External Links</div>
+          <a href="https://search.asu.edu/profile/3334658" target="_blank" rel="noopener">ASU Faculty Profile</a>
+          <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" target="_blank" rel="noopener">ResearchGate</a>
+        </div>
+        <div class="col-lg-3">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">Contact</div>
+          <div style="font-size:0.88rem; opacity:0.8; line-height:2;">
+            <i class="bi bi-envelope-fill me-2"></i><a href="mailto:lauren.weidner@asu.edu" style="color:rgba(255,255,255,0.8);">lauren.weidner@asu.edu</a><br>
+            <i class="bi bi-telephone-fill me-2"></i> 602.543.6068<br>
+            <i class="bi bi-geo-alt-fill me-2"></i> 4701 W. Thunderbird Rd, Glendale, AZ 85382
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        &copy; <script>document.write(new Date().getFullYear())</script> FEWL Lab &mdash; Arizona State University. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // ── Research section tab switcher ──────────────────────────────
+    // Called by onclick on each pill button.
+    // showSection(sectionId, buttonElement)
+    function showSection(id, btn) {
+      // Hide all sections
+      document.querySelectorAll('.research-section').forEach(s => s.classList.remove('active'));
+      // Deactivate all pills
+      document.querySelectorAll('.research-pill').forEach(b => b.classList.remove('active'));
+      // Show selected section
+      document.getElementById(id).classList.add('active');
+      // Activate clicked pill
+      if (btn) btn.classList.add('active');
+      // Scroll to top of section area
+      window.scrollTo({ top: document.querySelector('[style*="sticky"]').offsetTop + 60, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

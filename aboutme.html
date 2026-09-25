@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  ================================================================
+  About Dr. Weidner — aboutme.html
+  ================================================================
+  TO EDIT: Update bio text, photo, CV link, and profile links below.
+  Photo path: assets/img/team/weidner-headshot.jpg
+  CV path:    assets/weidner-cv.pdf
+  ================================================================
+  -->
+  <title>About Dr. Weidner | FEWL Lab @ ASU</title>
+  <meta name="description" content="Learn about Dr. Lauren M. Weidner, Associate Professor of Forensic Entomology at Arizona State University and director of the FEWL Lab.">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR — same on every page; update active link -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span>FEWL</span> Lab @ ASU</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <!-- People dropdown: About, Team, Alumni -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+            People
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aboutme.html">About Dr. Weidner</a></li>
+            <li><a class="dropdown-item" href="team.html">Research Team</a></li>
+            <li><a class="dropdown-item" href="team.html#alumni">Alumni</a></li>
+          </ul>
+        </li>
+
+        <!-- Research dropdown: Research areas, Publications -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Research
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="research.html">Research Areas</a></li>
+            <li><a class="dropdown-item" href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2" style="background:none; padding:0;">
+          <li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a></li>
+          <li class="breadcrumb-item active" style="color:var(--gold-main);">About Dr. Weidner</li>
+        </ol>
+      </nav>
+      <h1>Dr. Lauren M. Weidner</h1>
+      <p>Associate Professor of Forensic Entomology &mdash; Arizona State University</p>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section>
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- LEFT COLUMN: Photo + quick facts -->
+        <div class="col-lg-4">
+
+          <!--
+          PROFILE PHOTO
+          Replace the placeholder below with your actual photo:
+          1. Save photo to: assets/img/team/weidner-headshot.jpg
+          2. Delete the placeholder div
+          3. Uncomment the <img> tag below
+
+          <img src="assets/img/team/weidner-headshot.jpg"
+               alt="Dr. Lauren M. Weidner"
+               style="width:100%; border-radius:12px; border:3px solid var(--maroon-light);">
+          -->
+           <img src="assets/img/team/headshot-new.png"
+               alt="Dr. Lauren M. Weidner"
+               style="width:100%; border-radius:12px; border:3px solid var(--maroon-light);">
+
+          <!-- Profile action buttons -->
+          <div class="d-grid gap-2 mb-4">
+            <!--
+            CV DOWNLOAD BUTTON
+            1. Save your CV PDF to: assets/weidner-cv.pdf
+            2. The link below will then work automatically
+            -->
+          
+          </div>
+
+          <!-- External profiles -->
+          <div style="background:var(--maroon-pale); border:1px solid var(--maroon-border); border-radius:10px; padding:1.25rem;">
+            <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--text-light); margin-bottom:12px;">Profiles &amp; Links</div>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <a href="https://search.asu.edu/profile/3334658" target="_blank" rel="noopener" style="font-size:0.9rem; font-weight:600; color:var(--maroon-main);"><i class="bi bi-building me-2"></i>ASU Faculty Profile</a>
+              <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" target="_blank" rel="noopener" style="font-size:0.9rem; font-weight:600; color:var(--maroon-main);"><i class="bi bi-mortarboard-fill me-2"></i>Google Scholar</a>
+              <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" target="_blank" rel="noopener" style="font-size:0.9rem; font-weight:600; color:var(--maroon-main);"><i class="bi bi-journals me-2"></i>ResearchGate</a>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div style="margin-top:1.5rem; background:var(--gold-light); border:1px solid #e8c84a; border-radius:10px; padding:1.25rem;">
+            <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--gold-dark); margin-bottom:10px;">Certifications</div>
+            <div style="font-size:0.9rem; line-height:1.9; color:var(--text-dark);">
+              <i class="bi bi-patch-check-fill me-2" style="color:var(--gold-dark);"></i>Diplomate, American Board of Forensic Entomology (2022–present)<br>
+            </div>
+          </div>
+
+        </div>
+        <!-- END LEFT COLUMN -->
+
+        <!-- RIGHT COLUMN: Bio and background -->
+        <div class="col-lg-8">
+
+          <!--
+          BIO TEXT — edit paragraphs below to update Dr. Weidner's biography.
+          -->
+          <h2 class="section-title">About</h2>
+          <div class="section-divider"></div>
+
+          <p style="font-size:1.05rem; line-height:1.85; color:var(--text-mid);">
+            Dr. Lauren M. Weidner is an Associate Professor of Forensic Entomology in the
+            <a href="https://forensics.asu.edu/" target="_blank" rel="noopener">School of Interdisciplinary Forensics</a>
+            at Arizona State University's New College of Interdisciplinary Arts and Sciences.
+            She is the director of the <strong>Forensic Entomology and Wildlife Lab (FEWL)</strong>,
+            where her research focuses on the ecology of forensically important insects, blow fly
+            biodiversity in arid environments, and the application of entomology to wildlife
+            forensics and criminal investigations.
+          </p>
+
+          <p style="font-size:1.05rem; line-height:1.85; color:var(--text-mid);">
+            Dr. Weidner earned her Ph.D. in Entomology from Rutgers, The State University of New
+            Jersey in 2016 and her B.Sc. in Forensic Science from John
+            Jay College of Criminal Justice in New York. Before joining ASU in 2019, she served
+            as a Postdoctoral Research Associate and Continuing Lecturer at Purdue University.
+          </p>
+
+          <p style="font-size:1.05rem; line-height:1.85; color:var(--text-mid);">
+            Her research has been funded by the American Academy of Forensic Sciences, Western
+            National Parks Association, and multiple ASU Seed Grants, with industry support from
+            several organizations. She has been recognized with numerous awards including the
+            2024 Fulbright Specialist designation, and has served as President of the North
+            American Forensic Entomology Association (2022–2024).
+          </p>
+
+          <!-- Education Timeline -->
+          <h3 style="font-family:'Lora',serif; font-size:1.3rem; font-weight:700; margin-top:2.5rem; margin-bottom:1rem;">Education</h3>
+
+          <!-- Education item — copy to add more -->
+          <div style="display:flex; gap:16px; margin-bottom:1.25rem; align-items:flex-start;">
+            <div style="width:44px; height:44px; background:var(--maroon-light); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <i class="bi bi-mortarboard-fill" style="color:var(--maroon-main);"></i>
+            </div>
+            <div>
+              <div style="font-weight:700; font-size:0.97rem;">Ph.D. in Entomology &mdash; 2016</div>
+              <div style="font-size:0.9rem; color:var(--text-light);">Rutgers, The State University of New Jersey, New Brunswick, NJ</div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:16px; margin-bottom:1.25rem; align-items:flex-start;">
+            <div style="width:44px; height:44px; background:var(--maroon-light); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <i class="bi bi-book-fill" style="color:var(--maroon-main);"></i>
+            </div>
+            <div>
+              <div style="font-weight:700; font-size:0.97rem;">B.Sc. in Forensic Science &mdash; 2010</div>
+              <div style="font-size:0.9rem; color:var(--text-light);">John Jay College of Criminal Justice, New York, NY</div>
+            </div>
+          </div>
+
+          <!-- Selected Awards -->
+          <h3 style="font-family:'Lora',serif; font-size:1.3rem; font-weight:700; margin-top:2.5rem; margin-bottom:1rem;">Selected Awards &amp; Recognition</h3>
+          <ul style="font-size:0.95rem; line-height:2.2; color:var(--text-mid); padding-left:1.2rem;">
+            <li><strong>2025</strong> Excellence in Community Engagement — New College, ASU</li>
+            <li><strong>2025</strong> Pacific Branch Distinction in Student Mentoring Award — ESA Pacific Branch</li>
+            <li><strong>2024</strong> Fulbright Specialist — Host: Universiti Teknologi MARA, Malaysia</li>
+            <li><strong>2023</strong> Medical, Urban, and Veterinary Entomology Award — ESA Pacific Branch</li>
+            <li><strong>2023</strong> Outstanding Service Award for Undergraduate Teaching Excellence — New College, ASU</li>
+            <li><strong>2021</strong> Excellence in Early Career Award — ESA Pacific Branch</li>
+            <!--
+            TO EDIT: Add more awards here as <li> elements.
+            Format: <li><strong>YEAR</strong> Award name — Organization</li>
+            -->
+          </ul>
+
+          <!-- Research Interests summary -->
+          <h3 style="font-family:'Lora',serif; font-size:1.3rem; font-weight:700; margin-top:2.5rem; margin-bottom:1rem;">Research Interests</h3>
+          <div class="row g-2">
+            <!-- TO EDIT: Add or remove interest tags as needed -->
+            <div class="col-auto"><span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.82rem; font-weight:700; padding:5px 14px; border-radius:20px; display:inline-block;">Forensic Entomology</span></div>
+            <div class="col-auto"><span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.82rem; font-weight:700; padding:5px 14px; border-radius:20px; display:inline-block;">Blow Fly Ecology</span></div>
+            <div class="col-auto"><span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.82rem; font-weight:700; padding:5px 14px; border-radius:20px; display:inline-block;">Wildlife Forensics</span></div>
+            <div class="col-auto"><span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.82rem; font-weight:700; padding:5px 14px; border-radius:20px; display:inline-block;">Calliphoridae</span></div>
+            <div class="col-auto"><span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.82rem; font-weight:700; padding:5px 14px; border-radius:20px; display:inline-block;">Insect Biodiversity</span></div>
+            <div class="col-auto"><span style="background:var(--maroon-light); color:var(--maroon-main); font-size:0.82rem; font-weight:700; padding:5px 14px; border-radius:20px; display:inline-block;">Arid Environments</span></div>
+          </div>
+
+        </div>
+        <!-- END RIGHT COLUMN -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER — same on every page -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-logo mb-2"><span>FEWL</span> Lab @ ASU</div>
+          <p style="font-size:0.88rem; opacity:0.75; line-height:1.7;">Forensic Entomology and Wildlife Lab<br>School of Interdisciplinary Forensics<br>Arizona State University</p>
+          <div class="social-icons mt-2">
+            <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" title="Google Scholar" target="_blank" rel="noopener"><i class="bi bi-mortarboard-fill"></i></a>
+            <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" title="ResearchGate" target="_blank" rel="noopener"><i class="bi bi-journals"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 footer-links">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">External Links</div>
+          <a href="https://search.asu.edu/profile/3334658" target="_blank" rel="noopener">ASU Faculty Profile</a>
+          <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" target="_blank" rel="noopener">ResearchGate</a>
+            <a href="https://www.linkedin.com/in/lauren-weidner-ph-d-d-abfe-8a8250bb/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="col-lg-3">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">Contact</div>
+          <div style="font-size:0.88rem; opacity:0.8; line-height:2;">
+            <i class="bi bi-envelope-fill me-2"></i><a href="mailto:lauren.weidner@asu.edu" style="color:rgba(255,255,255,0.8);">lauren.weidner@asu.edu</a><br>
+            <i class="bi bi-telephone-fill me-2"></i> 602.543.6068<br>
+            <i class="bi bi-geo-alt-fill me-2"></i> 4701 W. Thunderbird Rd, Glendale, AZ 85382
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        &copy; <script>document.write(new Date().getFullYear())</script> FEWL Lab &mdash; Arizona State University. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

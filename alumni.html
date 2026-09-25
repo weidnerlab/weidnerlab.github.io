@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  ================================================================
+  Research Team — team.html
+  ================================================================
+  HOW TO ADD A NEW TEAM MEMBER:
+  1. Save their photo to: assets/img/team/firstname-lastname.jpg
+     (Recommended: 400×400px square, cropped to face/shoulders)
+  2. Copy one of the <div class="col-md-4 col-lg-3"> blocks below
+  3. Update: name, role, badge type, project description, photo src
+  4. Move members to the Alumni section when they leave
+
+  HOW TO ADD A PHOTO:
+  - Replace the placeholder <div class="team-photo-wrap"> block
+  - Use: <div class="team-photo-wrap">
+           <img src="assets/img/team/firstname-lastname.jpg" alt="Name">
+         </div>
+  ================================================================
+  -->
+  <title>Research Team | FEWL Lab @ ASU</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span>FEWL</span> Lab @ ASU</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <!-- People dropdown: About, Team, Alumni -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+            People
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aboutme.html">About Dr. Weidner</a></li>
+            <li><a class="dropdown-item" href="team.html">Research Team</a></li>
+            <li><a class="dropdown-item" href="team.html#alumni">Alumni</a></li>
+          </ul>
+        </li>
+
+        <!-- Research dropdown: Research areas, Publications -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Research
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="research.html">Research Areas</a></li>
+            <li><a class="dropdown-item" href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2" style="background:none; padding:0;">
+          <li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a></li>
+          <li class="breadcrumb-item active" style="color:var(--gold-main);">Research Team</li>
+        </ol>
+      </nav>
+      <h1>Past Lab Members</h1>
+     
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PRINCIPAL INVESTIGATOR
+       ============================================================ -->
+  <section>
+   
+          <!--
+          PI PHOTO — Replace placeholder with actual photo:
+          <div class="team-photo-wrap" style="width:160px; height:160px; margin:0 auto;">
+            <img src="assets/img/team/weidner-headshot.jpg" alt="Dr. Lauren Weidner">
+          </div>
+          -->
+  
+
+  <!-- ============================================================
+       ALUMNI
+       TO EDIT: Move current members here when they graduate/leave.
+       Add year and what they went on to do.
+       ============================================================ -->
+  <section class="section-pale">
+    <div class="container">
+
+      <h2 class="section-title">Alumni</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Former FEWL members and where they are now- Coming Soon!</p>
+
+
+    </div>
+  </section>
+  <!-- END ALUMNI -->
+
+  <!-- JOIN CTA -->
+  <section>
+    <div class="container text-center" style="max-width:640px;">
+      <h2 class="section-title">Interested in Joining?</h2>
+      <div class="section-divider mx-auto"></div>
+      <p style="font-size:1rem; color:var(--text-mid); line-height:1.8; margin-bottom:1.75rem;">
+        We welcome motivated students at all levels. If you are interested in forensic
+        entomology, wildlife forensics, or insect ecology, reach out to Dr. Weidner.
+      </p>
+      <a href="contact.html" class="btn-maroon" style="display:inline-block; padding:12px 32px; border-radius:6px; font-weight:700; color:#fff; background:var(--maroon-main); text-decoration:none; font-size:1rem;">Contact Dr. Weidner</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-logo mb-2"><span>FEWL</span> Lab @ ASU</div>
+          <p style="font-size:0.88rem; opacity:0.75; line-height:1.7;">Forensic Entomology and Wildlife Lab<br>School of Interdisciplinary Forensics<br>Arizona State University</p>
+          <div class="social-icons mt-2">
+            <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" title="Google Scholar" target="_blank" rel="noopener"><i class="bi bi-mortarboard-fill"></i></a>
+            <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" title="ResearchGate" target="_blank" rel="noopener"><i class="bi bi-journals"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 footer-links">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">External Links</div>
+          <a href="https://search.asu.edu/profile/3334658" target="_blank" rel="noopener">ASU Faculty Profile</a>
+          <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" target="_blank" rel="noopener">ResearchGate</a>
+        </div>
+        <div class="col-lg-3">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">Contact</div>
+          <div style="font-size:0.88rem; opacity:0.8; line-height:2;">
+            <i class="bi bi-envelope-fill me-2"></i><a href="mailto:lauren.weidner@asu.edu" style="color:rgba(255,255,255,0.8);">lauren.weidner@asu.edu</a><br>
+            <i class="bi bi-telephone-fill me-2"></i> 602.543.6068<br>
+            <i class="bi bi-geo-alt-fill me-2"></i> 4701 W. Thunderbird Rd, Glendale, AZ 85382
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        &copy; <script>document.write(new Date().getFullYear())</script> FEWL Lab &mdash; Arizona State University. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

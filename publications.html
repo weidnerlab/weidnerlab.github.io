@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  ================================================================
+  Publications — publications.html
+  ================================================================
+  HOW TO ADD A NEW PUBLICATION:
+  1. Copy one of the <div class="pub-entry"> blocks below
+  2. Fill in: authors, year, title, journal, volume/pages, DOI
+  3. Add the newest publications at the TOP of the appropriate year section
+  4. If adding a new year, copy the <div class="pub-year-header"> block
+
+  AUTHOR FORMATTING:
+  - Bold Dr. Weidner's name: <strong>Weidner, L.M.</strong>
+  - Undergrad co-authors: add <sup class="pub-ug-star">*</sup> after name
+  - Grad student co-authors: add <sup class="pub-ug-star">^</sup> after name
+
+  PDF LINKS:
+  - Save PDF to: assets/publications/lastname-year-journal.pdf
+  - Add button: <a href="assets/publications/..." class="pub-pdf" target="_blank">
+                  <i class="bi bi-file-pdf"></i> PDF</a>
+
+  NOTE ON NOTATION:
+  * = undergraduate student co-author
+  ^ = graduate student co-author
+  ================================================================
+  -->
+  <title>Publications | FEWL Lab @ ASU</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span>FEWL</span> Lab @ ASU</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <!-- People dropdown: About, Team, Alumni -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            People
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aboutme.html">About Dr. Weidner</a></li>
+            <li><a class="dropdown-item" href="team.html">Research Team</a></li>
+            <li><a class="dropdown-item" href="team.html#alumni">Alumni</a></li>
+          </ul>
+        </li>
+
+        <!-- Research dropdown: Research areas, Publications -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+            Research
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="research.html">Research Areas</a></li>
+            <li><a class="dropdown-item" href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2" style="background:none; padding:0;">
+          <li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a></li>
+          <li class="breadcrumb-item active" style="color:var(--gold-main);">Publications</li>
+        </ol>
+      </nav>
+      <h1>Publications</h1>
+      <p>
+        <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" target="_blank" rel="noopener" style="color:var(--gold-main);">Google Scholar</a>
+        &nbsp;&bull;&nbsp;
+        <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" target="_blank" rel="noopener" style="color:var(--gold-main);">ResearchGate</a>
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Sidebar: year jump links -->
+        <div class="col-lg-2 d-none d-lg-block">
+          <div style="position:sticky; top:80px;">
+            <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--text-light); margin-bottom:10px;">Jump to year</div>
+            <!-- TO EDIT: Add/remove years to match your publication list -->
+            <div style="display:flex; flex-direction:column; gap:4px;">
+              <a href="#books" style="font-size:0.85rem; padding:4px 8px; border-radius:4px; color:var(--maroon-main); font-weight:700;">Book Chapters</a>
+             <a href="#y2026" style="font-size:0.85rem; padding:4px 8px; border-radius:4px; color:var(--text-mid);">2026</a>
+              <a href="#y2025" style="font-size:0.85rem; padding:4px 8px; border-radius:4px; color:var(--text-mid);">2025</a>
+              <a href="#y2024" style="font-size:0.85rem; padding:4px 8px; border-radius:4px; color:var(--text-mid);">2024</a>
+              <a href="#y2023" style="font-size:0.85rem; padding:4px 8px; border-radius:4px; color:var(--text-mid);">2023</a>
+              <a href="#y2022" style="font-size:0.85rem; padding:4px 8px; border-radius:4px; color:var(--text-mid);">2022</a>
+              <a href="#y2021" style="font-size:0.85rem; padding:4px 8px; border-radius:4px; color:var(--text-mid);">2021</a>
+              <a href="#y2020" style="font-size:0.85rem; padding:4px 8px; border-radius:4px; color:var(--text-mid);">2020</a>
+              <a href="#older" style="font-size:0.85rem; padding:4px 8px; border-radius:4px; color:var(--text-mid);">2014–2018</a>
+            </div>
+            <div style="margin-top:1rem; font-size:0.78rem; color:var(--text-light); line-height:1.6;">
+              <sup>*</sup> Undergraduate<br>
+              <sup>^</sup> Graduate student
+            </div>
+          </div>
+        </div>
+
+        <!-- Main publication list -->
+        <div class="col-lg-10">
+
+          <!-- NOTATION KEY (mobile) -->
+          <div class="d-lg-none mb-3" style="font-size:0.82rem; color:var(--text-light);">
+            <sup>*</sup> Undergraduate co-author &nbsp;&bull;&nbsp; <sup>^</sup> Graduate student co-author
+          </div>
+
+          <!-- ── BOOK CHAPTERS ── -->
+          <div class="pub-year-header" id="books">Book Chapters</div>
+
+          <!-- Book chapter 6 -->
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong>, Hans, K.R., and T.L. Whitworth.</div>
+            <div class="pub-title">Diversity and Taxonomy of Forensically Relevant Blow Flies (pp. 21–40)</div>
+            <div class="pub-journal"><em>In</em> The Calliphoridae of Forensic Significance, D. Rivers &amp; J. Wallace (Eds.), Academic Press. 2026.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1016/B978-0-443-13961-1.00011-3" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+              <!-- <a href="assets/publications/weidner-2026-calliphoridae-diversity.pdf" class="pub-pdf" target="_blank"><i class="bi bi-file-pdf"></i> PDF</a> -->
+            </div>
+          </div>
+
+          <!-- Book chapter 5 -->
+          <div class="pub-entry">
+            <div class="pub-authors">Hans, K.R. and <strong>L.M. Weidner.</strong></div>
+            <div class="pub-title">Calliphoridae Community Succession (pp. 177–186)</div>
+            <div class="pub-journal"><em>In</em> The Calliphoridae of Forensic Significance, D. Rivers &amp; J. Wallace (Eds.), Academic Press. 2026.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1016/B978-0-443-13961-1.00015-0" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- Book chapter 4 -->
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong> and R.W. Merritt.</div>
+            <div class="pub-title">Arthropod Communities of Terrestrial Vertebrate Carrion (pp. 191–210)</div>
+            <div class="pub-journal"><em>In</em> Carrion Ecology, Evolution and Their Applications, 2nd Ed., M.E. Benbow, J.K. Tomberlin, &amp; A.M. Tarone (Eds.), CRC Press, Boca Raton, FL. 2025.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1201/9781003610885-12" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- Book chapter 3 -->
+          <div class="pub-entry">
+            <div class="pub-authors">Tomberlin, J., Cammack, J., <strong>Weidner, L.</strong>, &amp; R. Puckett.</div>
+            <div class="pub-title">Forensic Entomology (pp. 163–172)</div>
+            <div class="pub-journal"><em>In</em> Geriatric Forensic Medicine and Pathology, K. Collins &amp; R. Byard (Eds.), Cambridge University Press. 2020.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1017/9781316823040.011" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- Book chapter 2 -->
+          <div class="pub-entry">
+            <div class="pub-authors">Gemmellaro, M.D. and <strong>L.M. Weidner.</strong></div>
+            <div class="pub-title">The Professional History of Forensic Entomology (pp. 547–554)</div>
+            <div class="pub-journal"><em>In</em> Forensic Entomology: The Utility of Arthropods in Legal Investigations, 3rd ed., J.H. Byrd &amp; J.K. Tomberlin (Eds.), CRC Press. 2019.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.4324/9781351163767" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- Book chapter 1 -->
+          <div class="pub-entry">
+            <div class="pub-authors">Huntington, T.E., <strong>Weidner, L.M.</strong>, and R.D. Hall.</div>
+            <div class="pub-title">Introduction: Current Perceptions and Status of Forensic Entomology (pp. xxiii–xxxiv)</div>
+            <div class="pub-journal"><em>In</em> Forensic Entomology: The Utility of Arthropods in Legal Investigations, 3rd ed., J.H. Byrd &amp; J.K. Tomberlin (Eds.), CRC Press. 2019.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.4324/9781351163767" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- ── PEER-REVIEWED MANUSCRIPTS ── -->
+          <div class="pub-year-header" id="books">Peer Reviewed Manuscripts</div>
+          <!-- ── 2026 ── -->
+          <div class="pub-year-header" id="y2026">2026</div>
+
+  			<div class="pub-entry">
+            <div class="pub-authors">Kahler, G.V. and <strong>L.M. Weidner.</strong></div>
+            <div class="pub-title">Effects of elevation, season and bait type on assemblage of forensically relevant blow flies (Diptera: Calliphoridae) in contrasting habitats of northwestern Arizona.</div>
+            <div class="pub-journal"><em>Medical and Veterinary Entomology</em> 40(3): 647-658. 2026.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1111/mve.70073" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+          <!-- ── 2025 ── -->
+          <div class="pub-year-header" id="y2025">2025</div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Gemmellaro, M.D., Anderson, G.S., Hamilton, G., and <strong>L. Weidner.</strong></div>
+            <div class="pub-title">Food preferences of adult male and female <em>Calliphora vicina</em> (Diptera: Calliphoridae).</div>
+            <div class="pub-journal"><em>Canadian Society of Forensic Science Journal.</em> 1–15. 2025.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1080/00085030.2025.2548060" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Gemmellaro, M.D., Anderson, G.S., Hamilton, G.C., Domínguez-Trujillo, M., and <strong>L.M. Weidner.</strong></div>
+            <div class="pub-title">Species richness and distribution of Calliphoridae along an elevation gradient in Sicily (Italy) and Ecuador.</div>
+            <div class="pub-journal"><em>Insects</em> 16(5): 498. 2025.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.3390/insects16050498" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- ── 2024 ── -->
+          <div class="pub-year-header" id="y2024">2024</div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong> and A.W. Meeds.</div>
+            <div class="pub-title"><em>Chrysomya rufifacies</em> (Macquart) (Diptera: Calliphoridae) Established in Arizona.</div>
+            <div class="pub-journal"><em>Proceedings of the Entomological Society of Washington</em> 125(4): 507–511. 2024.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.4289/0013-8797.125.4.507" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Gemmellaro, D., Forzisi, E., Andersons, G., Hamilton, G., and <strong>L. Weidner.</strong></div>
+            <div class="pub-title">A geometric morphometric analysis of wing variations in shape and size of the blue bottle fly <em>Calliphora vicina</em> (Diptera: Calliphoridae).</div>
+            <div class="pub-journal"><em>Environmental Entomology</em> nvae108: 1–10. 2024.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1093/ee/nvae018" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- ── 2023 ── -->
+          <div class="pub-year-header" id="y2023">2023</div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Meeds, A.W., Rusch, T., Falcone, D.L.<sup class="pub-ug-star">*</sup>, and <strong>L.M. Weidner.</strong></div>
+            <div class="pub-title">A survey of blow fly (Diptera: Calliphoridae) populations in Phoenix Arizona.</div>
+            <div class="pub-journal"><em>Frontiers in Ecology and Evolution</em> 11: 1158347. 2023.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.3389/fevo.2023.1158347" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.</strong> and G. Powell.</div>
+            <div class="pub-title">Forensically important sap beetles (Coleoptera: Nitidulidae) of North America.</div>
+            <div class="pub-journal"><em>Journal of Forensic Entomology</em> 1. 2023.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.63586/83ewez16" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- ── 2022 ── -->
+          <div class="pub-year-header" id="y2022">2022</div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Monzon, M.A.<sup class="pub-ug-star">^</sup>, <strong>Weidner, L.M.</strong>, Rusch, T.W., Nehrozoglu, S.<sup class="pub-ug-star">*</sup>, and G. Hamilton.</div>
+            <div class="pub-title">High Temperature Limits of Survival and Oviposition of <em>Phormia regina</em> (Meigen) and <em>Lucilia sericata</em> (Meigen).</div>
+            <div class="pub-journal"><em>Insects</em> 13(11): 991. 2022.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.3390/insects13110991" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Noblesse, A.P.<sup class="pub-ug-star">*</sup>, Meeds, A.W., and <strong>L.M. Weidner.</strong></div>
+            <div class="pub-title">Blow flies (Diptera: Calliphoridae) and the American diet: Effects of fat content on blow fly development.</div>
+            <div class="pub-journal"><em>Journal of Medical Entomology</em> 59(4): 1191–1197. 2022.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1093/jme/tjac040" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Jeong, Y., <strong>Weidner, L.M.</strong>, Pergande, S.<sup class="pub-ug-star">*</sup>, Gemmellaro, D., Jennings, D.E., and K.R. Hans.</div>
+            <div class="pub-title">Biodiversity of forensically relevant blowflies (Diptera: Calliphoridae) at the Anthropology Research Facility in Knoxville, Tennessee, USA.</div>
+            <div class="pub-journal"><em>Insects</em> 13(2): 109. 2022.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.3390/insects13020109" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- ── 2021 ── -->
+          <div class="pub-year-header" id="y2021">2021</div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong>, Byrd, J., Sutton, L., and K.R. Hans.</div>
+            <div class="pub-title">Forensic Entomology: An introduction to the literature of the United States.</div>
+            <div class="pub-journal"><em>WIREs Forensic Science</em> 3(5): e1435. 2021.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1002/wfs2.1435" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong> and K.R. Hans.</div>
+            <div class="pub-title">A review of Forensic Entomology literature in the Northeastern United States.</div>
+            <div class="pub-journal"><em>WIREs Forensic Science</em> 3(5): e1402. 2021.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1002/wfs2.1402" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Hans, K.R., Yoho, K.<sup class="pub-ug-star">^</sup>, Parrott, J.J., and <strong>L.M. Weidner.</strong></div>
+            <div class="pub-title">A review of Forensic Entomology literature in the Mountain Prairie region of the United States.</div>
+            <div class="pub-journal"><em>WIREs Forensic Science</em> 3(5): e1412. 2021.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1002/wfs2.1412" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Hans, K.R., Yoho, K.<sup class="pub-ug-star">^</sup>, Robbins, H.<sup class="pub-ug-star">*</sup>, and <strong>L.M. Weidner.</strong></div>
+            <div class="pub-title">A review of the Forensic Entomology literature in the midwestern United States.</div>
+            <div class="pub-journal"><em>WIREs Forensic Science</em> 3(5): e1424. 2021.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1002/wfs2.1424" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong>, Meeds, A.W., Noblesse, A.P.<sup class="pub-ug-star">*</sup>, and K.R. Hans.</div>
+            <div class="pub-title">A review of Forensic Entomology literature in the southwestern United States.</div>
+            <div class="pub-journal"><em>WIREs Forensic Science</em> 3(5): e1421. 2021.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1002/wfs2.1421" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong> and G.S. Powell<sup class="pub-ug-star">^</sup>.</div>
+            <div class="pub-title">Key to the forensically important beetle (Insecta: Coleoptera) families of North America.</div>
+            <div class="pub-journal"><em>Journal of Forensic Science Education</em> 3(1). 2021.</div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Nigoghosian, G.<sup class="pub-ug-star">^</sup>, <strong>Weidner, L.M.</strong>, and T. Stamper.</div>
+            <div class="pub-title">Technical Note: A technique to mount Sarcophagidae and Calliphoridae (Diptera) larvae for forensic identification using geometric morphometrics.</div>
+            <div class="pub-journal"><em>Forensic Science International: Synergy</em> 3: 100135. 2021.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1016/j.fsisyn.2021.100135" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- ── 2020 ── -->
+          <div class="pub-year-header" id="y2020">2020</div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong>, Nigoghosian, G.<sup class="pub-ug-star">^</sup>, Yoho, K.C.<sup class="pub-ug-star">^</sup>, Parrott, J.J. and K.R. Hans.</div>
+            <div class="pub-title">An analysis of forensically important insects associated with human remains in Indiana, USA.</div>
+            <div class="pub-journal"><em>Journal of Forensic Science</em> 65(6): 2036–2041. 2020.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1111/1556-4029.14531" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Stamper, T.S., <strong>Weidner, L.M.</strong>, Nigoghosian, G., Johnson, N., Wang, C., and C. Levesque-Bristol.</div>
+            <div class="pub-title">Towards understanding how to instruct students in dichotomous identification keys in a mixed STEM forensic science education environment.</div>
+            <div class="pub-journal"><em>Journal of Forensic Science Education</em> 2(1). 2020.</div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong>, Nigoghosian, G.<sup class="pub-ug-star">^</sup>, Hanau, C.G.<sup class="pub-ug-star">*</sup>, and D.E. Jennings.</div>
+            <div class="pub-title">Analysis of alternative food sources for rearing entomological evidence.</div>
+            <div class="pub-journal"><em>Journal of Medical Entomology</em> 57(5): 1407–1410. 2020.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1093/jme/tjaa060" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- ── OLDER ── -->
+          <div class="pub-year-header" id="older">2014–2018</div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Gemmellaro, M.D.<sup class="pub-ug-star">^</sup>, Bucolo C., Musumeci E., and <strong>L.M. Weidner</strong>.</div>
+            <div class="pub-title">First observations of initial blow fly (Diptera: Calliphoridae) activity on lava fields and in subterranean environments in Sicily in cool temperatures.</div>
+            <div class="pub-journal"><em>Journal of Medical Entomology</em> 55(6): 1622–1626. 2018.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1093/jme/tjy099" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong>, Gemmellaro, M.D.<sup class="pub-ug-star">^</sup>, Tomberlin, J.K., and G.C. Hamilton.</div>
+            <div class="pub-title">Evaluation of bait traps as a means to predict initial blow fly (Diptera: Calliphoridae) communities associated with decomposing swine remains in New Jersey, US.</div>
+            <div class="pub-journal"><em>Forensic Science International</em> 278: 95–100. 2017.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1016/j.forsciint.2017.06.014" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong>, Monzon, M.A.<sup class="pub-ug-star">*</sup>, and G.C. Hamilton.</div>
+            <div class="pub-title">Death eaters respond to the dark mark of decomposition by day and night: observations of initial insect activity on pig carcasses.</div>
+            <div class="pub-journal"><em>International Journal of Legal Medicine</em> 130: 1633–1637. 2016.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1007/s00414-016-1371-y" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong>, Jennings D.E., Tomberlin, J.K., and G.C. Hamilton.</div>
+            <div class="pub-title">Seasonal and geographic variation in biodiversity of forensically important blow flies (Diptera: Calliphoridae) in New Jersey, USA.</div>
+            <div class="pub-journal"><em>Journal of Medical Entomology</em> 52: 937–946. 2015.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1093/jme/tjv104" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors">Puvabanditsin, S., Malik L., <strong>Weidner, L.M.</strong>, Jadhav, S., Sanderman, J., and R. Mehta.</div>
+            <div class="pub-title">Neonatal umbilical cord myiasis in New Jersey.</div>
+            <div class="pub-journal"><em>Journal of Perinatology</em> 34(9): 718–719. 2014.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1038/jp.2014.69" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-authors"><strong>Weidner, L.M.</strong>, Tomberlin, J.K., and G.C. Hamilton.</div>
+            <div class="pub-title">Development of <em>Lucilia coeruleiviridis</em> (Diptera: Calliphoridae) in New Jersey, USA.</div>
+            <div class="pub-journal"><em>Florida Entomologist</em> 97(2): 849–851. 2014.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1653/024.097.0277" target="_blank" rel="noopener" class="pub-doi"><i class="bi bi-link-45deg"></i> DOI</a>
+            </div>
+          </div>
+
+          <!-- ADD NEW PUBLICATIONS ABOVE THIS LINE -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-logo mb-2"><span>FEWL</span> Lab @ ASU</div>
+          <p style="font-size:0.88rem; opacity:0.75; line-height:1.7;">Forensic Entomology and Wildlife Lab<br>School of Interdisciplinary Forensics<br>Arizona State University</p>
+          <div class="social-icons mt-2">
+            <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" title="Google Scholar" target="_blank" rel="noopener"><i class="bi bi-mortarboard-fill"></i></a>
+            <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" title="ResearchGate" target="_blank" rel="noopener"><i class="bi bi-journals"></i></a>
+          </div>
+        </div>
+    
+        <div class="col-lg-3 footer-links">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">External Links</div>
+          <a href="https://search.asu.edu/profile/3334658" target="_blank" rel="noopener">ASU Faculty Profile</a>
+          <a href="https://scholar.google.com/citations?user=yDFA4XUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Lauren-Weidner-3" target="_blank" rel="noopener">ResearchGate</a>
+        </div>
+        <div class="col-lg-3">
+          <div style="font-size:0.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:12px;">Contact</div>
+          <div style="font-size:0.88rem; opacity:0.8; line-height:2;">
+            <i class="bi bi-envelope-fill me-2"></i><a href="mailto:lauren.weidner@asu.edu" style="color:rgba(255,255,255,0.8);">lauren.weidner@asu.edu</a><br>
+            <i class="bi bi-telephone-fill me-2"></i> 602.543.6068<br>
+            <i class="bi bi-geo-alt-fill me-2"></i> 4701 W. Thunderbird Rd, Glendale, AZ 85382
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        &copy; <script>document.write(new Date().getFullYear())</script> FEWL Lab &mdash; Arizona State University. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
